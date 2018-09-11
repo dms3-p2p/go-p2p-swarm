@@ -4,9 +4,9 @@ import (
 	"context"
 	"testing"
 
-	pstore "github.com/libp2p/go-libp2p-peerstore"
-	testutil "github.com/libp2p/go-testutil"
-	ma "github.com/multiformats/go-multiaddr"
+	pstore "github.com/dms3-p2p/go-p2p-peerstore"
+	testutil "github.com/dms3-p2p/go-testutil"
+	ma "github.com/dms3-mft/go-multiaddr"
 )
 
 func TestDialBadAddrs(t *testing.T) {

@@ -3,8 +3,8 @@ package swarm
 import (
 	"fmt"
 
-	inet "github.com/libp2p/go-libp2p-net"
-	ma "github.com/multiformats/go-multiaddr"
+	inet "github.com/dms3-p2p/go-p2p-net"
+	ma "github.com/dms3-mft/go-multiaddr"
 )
 
 // Listen sets up listeners for all of the given addresses.

@@ -9,15 +9,15 @@ import (
 	"sync/atomic"
 	"time"
 
-	logging "github.com/ipfs/go-log"
+	logging "github.com/dms3-fs/go-log"
 	"github.com/jbenet/goprocess"
 	goprocessctx "github.com/jbenet/goprocess/context"
-	metrics "github.com/libp2p/go-libp2p-metrics"
-	inet "github.com/libp2p/go-libp2p-net"
-	peer "github.com/libp2p/go-libp2p-peer"
-	pstore "github.com/libp2p/go-libp2p-peerstore"
-	transport "github.com/libp2p/go-libp2p-transport"
-	filter "github.com/libp2p/go-maddr-filter"
+	metrics "github.com/dms3-p2p/go-p2p-metrics"
+	inet "github.com/dms3-p2p/go-p2p-net"
+	peer "github.com/dms3-p2p/go-p2p-peer"
+	pstore "github.com/dms3-p2p/go-p2p-peerstore"
+	transport "github.com/dms3-p2p/go-p2p-transport"
+	filter "github.com/dms3-p2p/go-maddr-filter"
 	mafilter "github.com/whyrusleeping/multiaddr-filter"
 )
 

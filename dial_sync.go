@@ -4,7 +4,7 @@ import (
 	"context"
 	"sync"
 
-	peer "github.com/libp2p/go-libp2p-peer"
+	peer "github.com/dms3-p2p/go-p2p-peer"
 )
 
 // DialFunc is the type of function expected by DialSync.

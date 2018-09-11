@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	transport "github.com/libp2p/go-libp2p-transport"
-	ma "github.com/multiformats/go-multiaddr"
+	transport "github.com/dms3-p2p/go-p2p-transport"
+	ma "github.com/dms3-mft/go-multiaddr"
 )
 
 // TransportForDialing retrieves the appropriate transport for dialing the given
@@ -56,7 +56,7 @@ func (s *Swarm) TransportForListening(a ma.Multiaddr) transport.Transport {
 
 // AddTransport adds a transport to this swarm.
 //
-// Satisfies the Network interface from go-libp2p-transport.
+// Satisfies the Network interface from go-dms3-p2p-transport.
 func (s *Swarm) AddTransport(t transport.Transport) error {
 	protocols := t.Protocols()
 

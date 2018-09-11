@@ -7,13 +7,13 @@ import (
 	"testing"
 	"time"
 
-	peer "github.com/libp2p/go-libp2p-peer"
-	pstore "github.com/libp2p/go-libp2p-peerstore"
-	ci "github.com/libp2p/go-testutil/ci"
-	ma "github.com/multiformats/go-multiaddr"
+	peer "github.com/dms3-p2p/go-p2p-peer"
+	pstore "github.com/dms3-p2p/go-p2p-peerstore"
+	ci "github.com/dms3-p2p/go-testutil/ci"
+	ma "github.com/dms3-mft/go-multiaddr"
 
-	. "github.com/libp2p/go-libp2p-swarm"
-	swarmt "github.com/libp2p/go-libp2p-swarm/testing"
+	. "github.com/dms3-p2p/go-p2p-swarm"
+	swarmt "github.com/dms3-p2p/go-p2p-swarm/testing"
 )
 
 func TestSimultOpen(t *testing.T) {

@@ -5,10 +5,10 @@ import (
 	"sync"
 	"time"
 
-	addrutil "github.com/libp2p/go-addr-util"
-	peer "github.com/libp2p/go-libp2p-peer"
-	transport "github.com/libp2p/go-libp2p-transport"
-	ma "github.com/multiformats/go-multiaddr"
+	addrutil "github.com/dms3-p2p/go-addr-util"
+	peer "github.com/dms3-p2p/go-p2p-peer"
+	transport "github.com/dms3-p2p/go-p2p-transport"
+	ma "github.com/dms3-mft/go-multiaddr"
 )
 
 type dialResult struct {

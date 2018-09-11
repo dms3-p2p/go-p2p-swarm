@@ -4,18 +4,19 @@ import (
 	"context"
 	"testing"
 
-	csms "github.com/libp2p/go-conn-security-multistream"
-	metrics "github.com/libp2p/go-libp2p-metrics"
-	inet "github.com/libp2p/go-libp2p-net"
-	pstore "github.com/libp2p/go-libp2p-peerstore"
-	secio "github.com/libp2p/go-libp2p-secio"
-	tptu "github.com/libp2p/go-libp2p-transport-upgrader"
-	tcp "github.com/libp2p/go-tcp-transport"
-	tu "github.com/libp2p/go-testutil"
-	msmux "github.com/whyrusleeping/go-smux-multistream"
-	yamux "github.com/whyrusleeping/go-smux-yamux"
+	csms "github.com/dms3-p2p/go-conn-security-multistream"
+	metrics "github.com/dms3-p2p/go-p2p-metrics"
+	inet "github.com/dms3-p2p/go-p2p-net"
+	pstore "github.com/dms3-p2p/go-p2p-peerstore"
+	secio "github.com/dms3-p2p/go-p2p-secio"
+	tptu "github.com/dms3-p2p/go-p2p-transport-upgrader"
+	tcp "github.com/dms3-p2p/go-tcp-transport"
+	tu "github.com/dms3-p2p/go-testutil"
+//	msmux "github.com/whyrusleeping/go-smux-multistream" // imports from multiformats, use ours
+	msmux "github.com/dms3-why/go-smux-multistream"
+	yamux "github.com/dms3-why/go-smux-yamux"
 
-	swarm "github.com/libp2p/go-libp2p-swarm"
+	swarm "github.com/dms3-p2p/go-p2p-swarm"
 )
 
 type config struct {

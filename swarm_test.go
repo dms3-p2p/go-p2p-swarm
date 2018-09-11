@@ -10,14 +10,14 @@ import (
 	"testing"
 	"time"
 
-	logging "github.com/ipfs/go-log"
-	inet "github.com/libp2p/go-libp2p-net"
-	peer "github.com/libp2p/go-libp2p-peer"
-	pstore "github.com/libp2p/go-libp2p-peerstore"
-	ma "github.com/multiformats/go-multiaddr"
+	logging "github.com/dms3-fs/go-log"
+	inet "github.com/dms3-p2p/go-p2p-net"
+	peer "github.com/dms3-p2p/go-p2p-peer"
+	pstore "github.com/dms3-p2p/go-p2p-peerstore"
+	ma "github.com/dms3-mft/go-multiaddr"
 
-	. "github.com/libp2p/go-libp2p-swarm"
-	. "github.com/libp2p/go-libp2p-swarm/testing"
+	. "github.com/dms3-p2p/go-p2p-swarm"
+	. "github.com/dms3-p2p/go-p2p-swarm/testing"
 )
 
 var log = logging.Logger("swarm_test")
@@ -26,7 +26,7 @@ func EchoStreamHandler(stream inet.Stream) {
 	go func() {
 		defer stream.Close()
 
-		// pull out the ipfs conn
+		// pull out the dms3fs conn
 		c := stream.Conn()
 		log.Infof("%s ponging to %s", c.LocalPeer(), c.RemotePeer())
 

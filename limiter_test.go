@@ -9,10 +9,11 @@ import (
 	"testing"
 	"time"
 
-	peer "github.com/libp2p/go-libp2p-peer"
-	transport "github.com/libp2p/go-libp2p-transport"
-	ma "github.com/multiformats/go-multiaddr"
-	mafmt "github.com/whyrusleeping/mafmt"
+	peer "github.com/dms3-p2p/go-p2p-peer"
+	transport "github.com/dms3-p2p/go-p2p-transport"
+	ma "github.com/dms3-mft/go-multiaddr"
+//	mafmt "github.com/whyrusleeping/mafmt" // imports from multiformats, use ours
+	mafmt "github.com/dms3-why/mafmt"
 )
 
 func mustAddr(t *testing.T, s string) ma.Multiaddr {

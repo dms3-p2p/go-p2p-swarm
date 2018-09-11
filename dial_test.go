@@ -7,17 +7,17 @@ import (
 	"testing"
 	"time"
 
-	addrutil "github.com/libp2p/go-addr-util"
-	peer "github.com/libp2p/go-libp2p-peer"
-	pstore "github.com/libp2p/go-libp2p-peerstore"
-	swarmt "github.com/libp2p/go-libp2p-swarm/testing"
-	transport "github.com/libp2p/go-libp2p-transport"
-	testutil "github.com/libp2p/go-testutil"
-	ci "github.com/libp2p/go-testutil/ci"
-	ma "github.com/multiformats/go-multiaddr"
-	manet "github.com/multiformats/go-multiaddr-net"
+	addrutil "github.com/dms3-p2p/go-addr-util"
+	peer "github.com/dms3-p2p/go-p2p-peer"
+	pstore "github.com/dms3-p2p/go-p2p-peerstore"
+	swarmt "github.com/dms3-p2p/go-p2p-swarm/testing"
+	transport "github.com/dms3-p2p/go-p2p-transport"
+	testutil "github.com/dms3-p2p/go-testutil"
+	ci "github.com/dms3-p2p/go-testutil/ci"
+	ma "github.com/dms3-mft/go-multiaddr"
+	manet "github.com/dms3-mft/go-multiaddr-net"
 
-	. "github.com/libp2p/go-libp2p-swarm"
+	. "github.com/dms3-p2p/go-p2p-swarm"
 )
 
 func init() {

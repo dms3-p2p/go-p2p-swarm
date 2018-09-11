@@ -7,13 +7,13 @@ import (
 	"sync"
 	"time"
 
-	logging "github.com/ipfs/go-log"
-	addrutil "github.com/libp2p/go-addr-util"
-	lgbl "github.com/libp2p/go-libp2p-loggables"
-	inet "github.com/libp2p/go-libp2p-net"
-	peer "github.com/libp2p/go-libp2p-peer"
-	transport "github.com/libp2p/go-libp2p-transport"
-	ma "github.com/multiformats/go-multiaddr"
+	logging "github.com/dms3-fs/go-log"
+	addrutil "github.com/dms3-p2p/go-addr-util"
+	lgbl "github.com/dms3-p2p/go-p2p-loggables"
+	inet "github.com/dms3-p2p/go-p2p-net"
+	peer "github.com/dms3-p2p/go-p2p-peer"
+	transport "github.com/dms3-p2p/go-p2p-transport"
+	ma "github.com/dms3-mft/go-multiaddr"
 )
 
 // Diagram of dial sync:

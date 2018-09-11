@@ -1,8 +1,8 @@
 package swarm
 
 import (
-	addrutil "github.com/libp2p/go-addr-util"
-	ma "github.com/multiformats/go-multiaddr"
+	addrutil "github.com/dms3-p2p/go-addr-util"
+	ma "github.com/dms3-mft/go-multiaddr"
 )
 
 // ListenAddresses returns a list of addresses at which this swarm listens.

@@ -1,7 +1,7 @@
 package swarm
 
 import (
-	mafilter "github.com/libp2p/go-maddr-filter"
+	mafilter "github.com/dms3-p2p/go-maddr-filter"
 	mamask "github.com/whyrusleeping/multiaddr-filter"
 )
 

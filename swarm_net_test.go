@@ -6,9 +6,9 @@ import (
 	"testing"
 	"time"
 
-	inet "github.com/libp2p/go-libp2p-net"
+	inet "github.com/dms3-p2p/go-p2p-net"
 
-	. "github.com/libp2p/go-libp2p-swarm/testing"
+	. "github.com/dms3-p2p/go-p2p-swarm/testing"
 )
 
 // TestConnectednessCorrect starts a few networks, connects a few
@@ -135,7 +135,7 @@ func TestNetworkOpenStream(t *testing.T) {
 			t.Error(err)
 			return
 		}
-		if string(buf) != "hello ipfs" {
+		if string(buf) != "hello dms3fs" {
 			t.Error("got wrong message")
 		}
 	})
@@ -154,7 +154,7 @@ func TestNetworkOpenStream(t *testing.T) {
 		t.Fatal("should only have one stream there")
 	}
 
-	_, err = s.Write([]byte("hello ipfs"))
+	_, err = s.Write([]byte("hello dms3fs"))
 	if err != nil {
 		t.Fatal(err)
 	}

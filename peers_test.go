@@ -4,12 +4,12 @@ import (
 	"testing"
 
 	"context"
-	inet "github.com/libp2p/go-libp2p-net"
-	peer "github.com/libp2p/go-libp2p-peer"
-	pstore "github.com/libp2p/go-libp2p-peerstore"
-	ma "github.com/multiformats/go-multiaddr"
+	inet "github.com/dms3-p2p/go-p2p-net"
+	peer "github.com/dms3-p2p/go-p2p-peer"
+	pstore "github.com/dms3-p2p/go-p2p-peerstore"
+	ma "github.com/dms3-mft/go-multiaddr"
 
-	. "github.com/libp2p/go-libp2p-swarm"
+	. "github.com/dms3-p2p/go-p2p-swarm"
 )
 
 func TestPeers(t *testing.T) {

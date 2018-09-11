@@ -7,9 +7,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	inet "github.com/libp2p/go-libp2p-net"
-	protocol "github.com/libp2p/go-libp2p-protocol"
-	smux "github.com/libp2p/go-stream-muxer"
+	inet "github.com/dms3-p2p/go-p2p-net"
+	protocol "github.com/dms3-p2p/go-p2p-protocol"
+	smux "github.com/dms3-p2p/go-stream-muxer"
 )
 
 type streamState int
@@ -22,7 +22,7 @@ const (
 	streamReset
 )
 
-// Validate Stream conforms to the go-libp2p-net Stream interface
+// Validate Stream conforms to the go-dms3-p2p-net Stream interface
 var _ inet.Stream = &Stream{}
 
 // Stream is the stream type used by swarm. In general, you won't use this type

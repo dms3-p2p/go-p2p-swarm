@@ -7,9 +7,9 @@ import (
 	"testing"
 	"time"
 
-	. "github.com/libp2p/go-libp2p-swarm"
+	. "github.com/dms3-p2p/go-p2p-swarm"
 
-	peer "github.com/libp2p/go-libp2p-peer"
+	peer "github.com/dms3-p2p/go-p2p-peer"
 )
 
 func getMockDialFunc() (DialFunc, func(), context.Context, <-chan struct{}) {
